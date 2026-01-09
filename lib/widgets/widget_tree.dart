@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data/notifiers.dart';
 import 'package:flutter_application_1/views/pages/about_page.dart';
 import 'package:flutter_application_1/views/pages/home_page.dart';
+import 'package:flutter_application_1/views/pages/login_page.dart';
 import 'package:flutter_application_1/views/pages/profile_page.dart';
 import 'package:flutter_application_1/views/pages/settings_page.dart';
 import 'package:flutter_application_1/widgets/Navbar_widget.dart';
@@ -67,6 +68,21 @@ class WidgetTree extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) {
                         return SettingsPage();
+                      },
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: Text('Logout'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return LoginPage();
                       },
                     ),
                   );

@@ -25,7 +25,12 @@ class _AboutPageState extends State<AboutPage> {
         },
         selectedIndex: selectedIndex,
       ),
-      body: Center(child: Text('This is the about page.')),
+      body: Column(
+        children: [
+          AboutDialog(),
+          Center(child: Text('This is the about page.')),
+        ],
+      ),
     );
   }
 }
