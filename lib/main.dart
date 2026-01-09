@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data/notifiers.dart';
-import 'package:flutter_application_1/views/widget_tree.dart';
+import 'package:flutter_application_1/views/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,6 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
   
   @override
   Widget build(BuildContext context) {
-    return WidgetTree();
+    return LoginPage();
   }
 }
